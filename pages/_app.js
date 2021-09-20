@@ -1,12 +1,13 @@
-import Layout from "../components/layout/layout";
 import "../styles/globals.css";
-
+import Head from "next/head";
 function MyApp({ Component, pageProps }) {
-  return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
-  );
+  /*
+  <Head>
+      <title>NextJsSSR</title>
+      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
+      */
+  return <Component {...pageProps} />;
 }
 
 export default MyApp;
