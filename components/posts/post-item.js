@@ -1,4 +1,4 @@
-import classes from "./posts-grid.module.css";
+import classes from "./post-item.module.css";
 import Link from "next/link";
 import Image from "next/image";
 
