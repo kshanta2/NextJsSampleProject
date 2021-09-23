@@ -25,10 +25,10 @@ function ContactForm() {
   const [requestStatus, setRequestStatus] = useState();
 
   useEffect(() => {
-    if (requestStatus === "success " || requestStatus === "error") {
+    if (requestStatus === "success" || requestStatus === "error") {
       const timer = setTimeout(() => {
         setRequestStatus(null);
-      }, 3000);
+      }, 1000);
 
       return () => clearTimeout(timer);
     }
@@ -103,12 +103,12 @@ function ContactForm() {
           <button>Send Message</button>
         </div>
       </form>
-      {notificationData && (
+      {requestStatus && (
         <Notification
           status={notificationData.status}
           title={notificationData.title}
           message={notificationData.message}
-        ></Notification>
+        />
       )}
     </section>
   );
