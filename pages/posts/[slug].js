@@ -25,7 +25,7 @@ export function getStaticProps(context) {
       posts: filteredData,
       slug: slug,
     },
-    revalidate: 60,
+    revalidate: 600,
   };
 }
 
